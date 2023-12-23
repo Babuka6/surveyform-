@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name"> Your Name: <input placeholder="Bob Rozowski" id="name" name="name" type="text" required /></label>
+        <label id="email-label" for="email"> Your Email: <input
+        placeholder="bobrozowski@gmail.com" id="email" name="email" type="email" required /></label>
+        <label id="number-label" for="number"> Your number: <input
+        placeholder="1234567890" id="number" name="number" type="number" min="1" max="100" required /></label>
+        
+      </fieldset>
+
+      <fieldset>
+        
+        <label>Your year (required))</label>
+        <label for="freshman"><input id="freshman" type="radio" name="college-year" class="inline" checked /> Freshman</label>
+                <label for="sophomore"><input id="sophomore" type="radio" name="college-year" class="inline" checked /> Sophomore</label>
+
+                                <label for="junior"><input id="junior" type="radio" name="college-year" class="inline" checked />Junior</label>
+
+<label for="senior"><input id="senior" type="radio" name="college-year" class="inline" checked />Senior</label>
+         
+      </fieldset>
+      <fieldset>
+        
+        
+        <label for="comments">Any comments?:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I really like...."></textarea>
+        </label>
+      </fieldset> 
+      <label> What was the most useful for you during our conference? (Check all that apply)
+      </label>
+<label for="career fair">
+        <input class="inline" id="career fair" type="checkbox" required value="career fair" /> Career fairs  
+      </label>
+<label for="research opportunities">
+        <input class="inline" id="research opportunities" type="checkbox" required value="research opportunities" /> Research opportunities 
+      </label>
+<label for="study abroad">
+        <input class="inline" id="study abroad" type="checkbox" required value="study abroad" />  Study Abroad Program
+      </label>
+
+      
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
